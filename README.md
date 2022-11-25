@@ -1,1 +1,1 @@
-# DSP-Studies
+# DSP Studies
