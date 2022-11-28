@@ -40,6 +40,6 @@ int main(int argc, char* argv[]) {
   }
 
   for (int i = 0; i < notes; i++) {
-    printf("%f\n", intervals[i]);
+    printf("%d: %f\n", i + 1, intervals[i]);
   }
 }
