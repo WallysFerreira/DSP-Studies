@@ -42,6 +42,5 @@ int main(int argc, char* argv[]) {
     }
   }
 
-  printf("%d\n", argc);
-  printf("%s\n", argv[1]);
+  // Chapter 1.6.7 150 PDF 123 BOOK
 }
