@@ -1,7 +1,5 @@
 #include "functions.h"
 
-int main() {
-  BREAKPOINT points[10];
-
-  findMaxPoint(points, 10);
+int main(int argc, char* argv[]) {
+  
 }
