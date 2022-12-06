@@ -15,7 +15,12 @@ typedef struct {
 // sscanf receives the line to read from, the format specifier to look for in that line and the addresses to store them in
 // sscanf returns the number of writes it has made
 // Makes sure sscanf has read 2 informations from the file (time and value)
-//
+// Makes sure time is increasing
+// Stores the time value of the last breakpoint to a variable lastTime
+// Checks if increased number of points is going to be equal to the number of spaces allocated to the variable before
+// If so, allocates more space
+// Checks if any points have been read. If so, returns the points
+
 BREAKPOINT* getPoints(FILE* fp, long* psize) {
   int got;
   long numberOfPoints = 0, size = 64;
