@@ -56,9 +56,7 @@ int main(int argc, char* argv[]) {
   BREAKPOINT* points;
 
   fp = fopen("breakpointExample.brk", "r");
-  printf("%d\n", totalRead);
   points = readBreakpoints(fp, &totalRead);
-  printf("%d\n", totalRead);
 
   for (int i = 0; i < totalRead; i++) {
     printf("%lf %lf\n", points[i].time, points[i].value);
