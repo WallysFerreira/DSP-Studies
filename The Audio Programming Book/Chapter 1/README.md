@@ -14,11 +14,11 @@
 </ul>
 
 ### Nice to know:
-<p><strong>fgets</strong>(string to temporarily store the line it is going to read, maximum number of characters to read in a line, file to read from)
+<p><strong>fgets</strong>(string to store the line in, maximum number of characters to read in a line, file to read from)
 <br>
 <strong>fgets</strong> returns NULL when there are no lines to read anymore or when an error occurs.</p>
 
-<p><strong>sscanf</strong>(string to temporarily store the line it is going to read, format specifier to search in the line, addresses to store the information it found)
+<p><strong>sscanf</strong>(string it is going to read from, format specifier to search in the line, addresses to store the information it found)
 <br>
 <strong>sscanf</strong> returns the amount of information it has read. If it returns a negative number, the line was empty</p>
 
