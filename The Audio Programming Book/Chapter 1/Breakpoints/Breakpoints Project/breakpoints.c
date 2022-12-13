@@ -1,7 +1,6 @@
 #include "functions.h"
 
 int main(int argc, char* argv[]) {
-  // int* userAnswer;
   int totalRead = 0, userAnswer;
   char* path;
   FILE* fp;
@@ -23,7 +22,7 @@ int main(int argc, char* argv[]) {
   // Menu here (Show points, find max point, )
   do {
     showMenu(&userAnswer);
-    
+
     switch (userAnswer) {
       case 0:
         break;
