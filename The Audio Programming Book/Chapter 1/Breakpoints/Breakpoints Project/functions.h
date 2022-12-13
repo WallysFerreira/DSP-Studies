@@ -23,15 +23,6 @@ void showMenu(int* userAnswer) {
   scanf("%d", userAnswer);
 }
 
-// Show breakpoints
-void showPoints(BREAKPOINT* points, int totalReadMain) {
-  printf("\n");
-  
-  for (int i = 0; i < totalReadMain; i++) {
-    printf("%.2lf %.2lf\n", points[i].time, points[i].value);
-  }
-}
-
 // Read breakpoints
 BREAKPOINT* readBreakpoints(FILE* fp, int* pointsReadMain) {
   int infoRead = 0, pointsRead = 0, size = 64;
@@ -77,6 +68,15 @@ BREAKPOINT* readBreakpoints(FILE* fp, int* pointsReadMain) {
 
   *pointsReadMain = pointsRead;
   return points;
+}
+
+// Show breakpoints
+void showPoints(BREAKPOINT* points, int totalReadMain) {
+  printf("\n");
+  
+  for (int i = 0; i < totalReadMain; i++) {
+    printf("%.2lf %.2lf\n", points[i].time, points[i].value);
+  }
 }
 
 // Return point with maximum value
